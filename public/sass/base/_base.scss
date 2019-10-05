@@ -1,0 +1,18 @@
+//Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Default font-size of 10px (10px/16px)
+html {
+  font-size: 62.5%;
+}
+
+//All elements inherit border-box sizing
+body {
+  box-sizing: border-box;
+}
