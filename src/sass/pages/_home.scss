@@ -3,5 +3,24 @@
   margin-top: -25rem;
   background-color: rgba($color-grey-light, 1);
   padding: 17rem 0 25rem 0;
-  
+  font-size: 1.6rem;
+  position: relative;
+
+  &__shape { 
+    float: left;
+    width: 30rem;
+    height: 30rem;
+    -webkit-shape-outside: circle(50% at 50% 45%);
+    shape-outside: circle(50% at 50% 45%);
+    -webkit-clip-path: circle(50% at 50% 45%);
+    clip-path: circle(50% at 50% 45%);
+    transform: translate(12rem, 2rem);
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    transform: translate(0, -5rem);
+
+  }
 }

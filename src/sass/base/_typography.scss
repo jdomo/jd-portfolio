@@ -26,13 +26,14 @@ header {
 }
 
 .heading-secondary {
-  font-size: 3.5rem; //35px
+  font-size: 4rem; //35px
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: .75rem;
 
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba($color-grey-dark, .2);
+
+  cursor: default;
 
   //text color gradient
   display: inline-block;      //background/gradient ends where text ends
