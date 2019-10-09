@@ -11,13 +11,13 @@ body {
     font-size: 5.0rem;
     font-weight: 400;
     letter-spacing: 1.4rem;
-    /* assign animation and duration */
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
+    // /* assign animation and duration */
+    // animation-name: moveInLeft;
+    // animation-duration: 2s;
+    // animation-timing-function: ease-out;
   
-    /* animation smoothing hack */
-    backface-visibility: hidden;
+    // /* animation smoothing hack */
+    // backface-visibility: hidden;
   }
   
   &--sub {
@@ -26,11 +26,11 @@ body {
     font-weight: 700;
     letter-spacing: 1.2rem;
   
-    /* assign animation and duration */
-    animation: moveInRight 2s ease-out;
+    // /* assign animation and duration */
+    // animation: moveInRight 2s ease-out;
   
-    /* animation smoothing hack */
-    backface-visibility: hidden;
+    // /* animation smoothing hack */
+    // backface-visibility: hidden;
   }
 }
 
