@@ -33,12 +33,18 @@ header {
 .u-margin-top {
   margin-top: 4rem; }
 
+.about {
+  height: 50rem;
+  margin-top: -25rem;
+  background-color: rgba(190, 211, 195, 0.8); }
+
 .header {
   position: relative;
   height: 50rem;
-  background-image: linear-gradient(to bottom, rgba(74, 145, 158, 0.8), #212e53);
+  background-image: linear-gradient(to bottom, #4a919e, #212e53);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: ellipse(80% 80% at 50% -10%);
   clip-path: ellipse(80% 80% at 50% -10%); }
   .header__logo-box {
     position: absolute;
@@ -56,7 +62,7 @@ header {
     transform: translate(-50%, -40%); }
 
 .navbar {
-  background-color: rgba(74, 145, 158, 0.8);
+  background-color: #4a919e;
   margin: 0;
   height: 8rem;
   padding: .5rem 0 0 0;
@@ -92,4 +98,4 @@ header {
     border-top: 4px solid #bed3c3;
     font-weight: 700;
     border-radius: 3px;
-    background-color: rgba(74, 145, 158, 0.9); }
+    background-color: rgba(33, 46, 83, 0.2); }

@@ -6,11 +6,11 @@
   height: 50rem;
   background-image: linear-gradient(
     to bottom, 
-    rgba($color-blue-light, 0.8), 
-    rgba($color-blue-dark, 1)); 
+    $color-blue-light, 
+    $color-blue-dark); 
   background-size: cover;
   background-position: top;
-  // -webkit-clip-path: polygon(0% 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: ellipse(80% 80% at 50% -10%);
   clip-path: ellipse(80% 80% at 50% -10%);
 
   
