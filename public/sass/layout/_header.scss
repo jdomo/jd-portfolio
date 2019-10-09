@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  height: 80vh;
+  background-image: linear-gradient(
+    to bottom, 
+    rgba($color-primary-light, 0.8) 20%, 
+    rgba($color-primary-dark, 0.8)); 
+  background-size: cover;
+  background-position: top;
+  // -webkit-clip-path: polygon(0% 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: ellipse(80% 80% at 50% 0%);
+
+  
+  &__logo-box {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+  
+  &__logo {
+    height: 3.5rem;
+  }
+  
+  &__text-box {
+    position: absolute;
+    text-align: center;
+    
+    /* center in relation to parent element */
+    top: 35%;
+    left: 50%;
+    
+    /* center in relation to element itself */    
+    transform: translate(-50%, -40%)
+  }
+}

@@ -1,3 +1,60 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 5.0rem;
+    font-weight: 400;
+    letter-spacing: 1.4rem;
+    /* assign animation and duration */
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  
+    /* animation smoothing hack */
+    backface-visibility: hidden;
+  }
+  
+  &--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.2rem;
+  
+    /* assign animation and duration */
+    animation: moveInRight 2s ease-out;
+  
+    /* animation smoothing hack */
+    backface-visibility: hidden;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem; //35px
+  text-transform: uppercase;
+  font-weight: 700;
+  
+  //text color gradient
+  display: inline-block;      //background/gradient ends where text ends
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  -webkit-background-clip: text;    //background shows only where text is present
+  color: transparent;               //text allows background clip to show through
+
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.025) translate(-1rem, -1rem);
+    text-shadow: 3rem 3rem .5rem rgba($color-grey-dark, .2);
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
