@@ -97,7 +97,7 @@ header {
   .navbar__item {
     display: inline-block;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     padding: 0 3rem;
     border-radius: 3px; }
   .navbar__link, .navbar__link:link, .navbar__link:visited {
@@ -109,12 +109,11 @@ header {
     border: none; }
   .navbar__link:hover, .navbar__link:active {
     border-top: 4px solid #bed3c3;
-    font-weight: 700;
     border-radius: 3px; }
   .navbar__link:focus {
     border-top: 4px solid #bed3c3;
-    font-weight: 700;
-    border-radius: 3px; }
+    border-radius: 3px;
+    background-color: rgba(33, 46, 83, 0.2); }
 
 .section-about {
   height: 60rem;
