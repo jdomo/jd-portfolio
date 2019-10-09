@@ -1,14 +1,15 @@
 .header {
   position: relative;
   height: 80vh;
+  min-height: 40rem;
   background-image: linear-gradient(
     to bottom, 
-    rgba($color-primary-light, 0.8) 20%, 
-    rgba($color-primary-dark, 0.8)); 
+    rgba($color-blue-light, 0.8) 30%, 
+    rgba($color-blue-dark, 0.8)); 
   background-size: cover;
   background-position: top;
   // -webkit-clip-path: polygon(0% 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: ellipse(80% 80% at 50% 0%);
+  clip-path: ellipse(80% 80% at 50% -10%);
 
   
   &__logo-box {
@@ -26,7 +27,7 @@
     text-align: center;
     
     /* center in relation to parent element */
-    top: 35%;
+    top: 30%;
     left: 50%;
     
     /* center in relation to element itself */    
