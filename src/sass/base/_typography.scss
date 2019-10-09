@@ -25,24 +25,32 @@ header {
   }
 }
 
-// .heading-secondary {
-//   font-size: 3.5rem; //35px
-//   text-transform: uppercase;
-//   font-weight: 700;
+.heading-secondary {
+  font-size: 4rem; //35px
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .75rem;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba($color-grey-dark, .2);
+
   
-//   //text color gradient
-//   display: inline-block;      //background/gradient ends where text ends
-//   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-//   -webkit-background-clip: text;    //background shows only where text is present
-//   color: transparent;               //text allows background clip to show through
+  // color: rgba($color-blue-dark, .85);
 
-//   transition: all .3s;
+  //text color gradient
+  display: inline-block;      //background/gradient ends where text ends
+  background-image: linear-gradient(to right, rgba($color-blue-dark, .7), $color-blue-dark);
+  -webkit-background-clip: text;    //background shows only where text is present
+  color: transparent;               //text allows background clip to show through
 
-//   &:hover {
-//     transform: scale(1.025) translate(-1rem, -1rem);
-//     text-shadow: 3rem 3rem .5rem rgba($color-grey-dark, .2);
-//   }
-// }
+  transition: all .3s;
+
+  &:hover {
+    transform: scale(1.025) translate(-1rem, -1rem);
+    text-shadow: 3rem 3rem .5rem rgba($color-grey-dark, .2);
+    border-bottom: none;
+  }
+}
 
 // .heading-tertiary {
 //   font-size: $default-font-size;
