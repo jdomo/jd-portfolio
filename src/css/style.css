@@ -35,9 +35,8 @@ header {
 
 .header {
   position: relative;
-  height: 80vh;
-  min-height: 40rem;
-  background-image: linear-gradient(to bottom, rgba(74, 145, 158, 0.8) 30%, rgba(33, 46, 83, 0.8));
+  height: 50rem;
+  background-image: linear-gradient(to bottom, rgba(74, 145, 158, 0.8), #212e53);
   background-size: cover;
   background-position: top;
   clip-path: ellipse(80% 80% at 50% -10%); }
@@ -57,14 +56,39 @@ header {
     transform: translate(-50%, -40%); }
 
 .navbar {
-  background-color: #4a919e;
-  min-height: 8vh;
-  color: #FFF; }
+  background-color: rgba(74, 145, 158, 0.8);
+  margin: 0;
+  height: 8rem;
+  padding: .5rem 0 0 0;
+  position: relative; }
   .navbar__linklist {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     list-style: none;
-    text-align: center; }
-  .navbar__link {
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid #4a919e;
+    padding-bottom: 2rem; }
+  .navbar__item {
     display: inline-block;
-    font-size: 1.5rem; }
-    .navbar__link:not(:last-child) {
-      padding-right: 6rem; }
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 3rem;
+    border-radius: 3px; }
+  .navbar__link:link, .navbar__link:visited {
+    transition: all .3s;
+    text-decoration: none;
+    color: #FFF;
+    padding: 1rem;
+    letter-spacing: .2rem; }
+  .navbar__link:hover, .navbar__link:active {
+    border-top: 4px solid white;
+    font-weight: 700;
+    border-radius: 3px; }
+  .navbar__link:focus {
+    border-top: 4px solid white;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: rgba(74, 145, 158, 0.9); }

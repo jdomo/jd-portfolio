@@ -1,20 +1,53 @@
 .navbar {
-  background-color: $color-blue-light;
-  min-height: $navbar-height;
-  color: $color-white;
-
+  background-color: rgba($color-blue-light, 0.8);
+  margin: 0;
+  height: 8rem;
+  padding: .5rem 0 0 0;
+  position: relative;
+  
   &__linklist {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     list-style: none;
     text-align: center;
+    width: 80%;
+    border-bottom: 1px solid rgba($color-blue-light, 1);  
+    padding-bottom: 2rem;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 3rem;
+    border-radius: 3px;
   }
 
   &__link {
-    display: inline-block;
-    font-size: 1.5rem;
-    // margin-top: 50%;
-
-    &:not(:last-child) {
-      padding-right: 6rem;
+    &:link,
+    &:visited {
+      transition: all .3s;
+      text-decoration: none;
+      color: $color-white;
+      padding: 1rem;
+      letter-spacing: .2rem;
     }
+
+    &:hover,
+    &:active {
+      border-top: 4px solid white;
+      font-weight: 700;
+      border-radius: 3px;
+    }
+    &:focus {
+      border-top: 4px solid white;
+      font-weight: 700;
+      border-radius: 3px;
+      background-color: rgba($color-blue-light, 0.9);
+    }
+
   }
 }
