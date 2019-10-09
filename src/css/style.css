@@ -77,18 +77,19 @@ header {
     font-weight: 700;
     padding: 0 3rem;
     border-radius: 3px; }
-  .navbar__link:link, .navbar__link:visited {
+  .navbar__link, .navbar__link:link, .navbar__link:visited {
     transition: all .3s;
     text-decoration: none;
     color: #FFF;
     padding: 1rem;
-    letter-spacing: .2rem; }
+    letter-spacing: .2rem;
+    border: none; }
   .navbar__link:hover, .navbar__link:active {
-    border-top: 4px solid white;
+    border-top: 4px solid #bed3c3;
     font-weight: 700;
     border-radius: 3px; }
   .navbar__link:focus {
-    border-top: 4px solid white;
+    border-top: 4px solid #bed3c3;
     font-weight: 700;
     border-radius: 3px;
     background-color: rgba(74, 145, 158, 0.9); }

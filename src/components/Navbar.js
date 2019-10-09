@@ -5,6 +5,9 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar__linklist">
         <li className="navbar__item">
+          <a href="#" className="navbar__link">About Me</a>
+        </li>
+        <li className="navbar__item">
           <a href="#" className="navbar__link">Skills</a>
         </li>
         <li className="navbar__item">
