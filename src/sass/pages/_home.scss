@@ -1,6 +1,6 @@
 .section-about {
   height: 60rem;
-  margin-top: -25rem;
+  margin-top: -27rem;
   background-color: rgba($color-grey-light, 1);
   padding: 17rem 0 25rem 0;
   font-size: 1.6rem;
@@ -22,14 +22,6 @@
     transform: translateX(-3rem);
     position: relative;
     drop-shadow: -3px 0 6px $color-black;
-
-    &::after {
-      width: 25rem;
-      height: 25rem;
-      box-shadow: -3px 0 6px $color-black;
-      -webkit-shape-outside: circle(50% at 50% 45%);
-    shape-outside: circle(50% at 50% 45%);
-    }
   }
 
   &__img {

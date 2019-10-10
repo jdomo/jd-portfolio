@@ -46,7 +46,7 @@ header {
   &:hover {
     transform: scale(1.025) translate(-1rem, -1rem);
     text-shadow: 3rem 3rem .5rem rgba($color-grey-dark, .2);
-    border-bottom: none;
+    border-bottom: 1px solid transparent;
     backface-visibility: hidden;
   }
 }
