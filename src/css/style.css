@@ -179,9 +179,7 @@ header {
     shape-outside: circle(50% at 50% 45%);
     -webkit-clip-path: circle(50% at 50% 45%);
     clip-path: circle(50% at 50% 45%);
-    transform: translateX(-3rem);
-    position: relative;
-    drop-shadow: -3px 0 6px #000; }
+    transform: translateX(-3rem); }
   .section-about__img {
     width: 100%;
     transform: translateY(-5rem);

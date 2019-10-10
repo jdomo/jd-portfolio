@@ -20,8 +20,6 @@
     -webkit-clip-path: circle(50% at 50% 45%);
     clip-path: circle(50% at 50% 45%);
     transform: translateX(-3rem);
-    position: relative;
-    drop-shadow: -3px 0 6px $color-black;
   }
 
   &__img {
