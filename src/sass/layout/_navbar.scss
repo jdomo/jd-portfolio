@@ -54,7 +54,7 @@
       border-radius: $border-radius-sml;
     }
 
-    &:focus {
+    &:target {
       border-top: 4px solid $color-tertiary-light;
       border-radius: $border-radius-sml;
       background-color: rgba($color-blue-dark, 0.2);
