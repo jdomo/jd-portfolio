@@ -12,7 +12,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #4a919e; }
 
 body {
   font-family: 'Raleway', sans-serif; }
@@ -36,7 +37,7 @@ header {
 .heading-secondary {
   font-size: 4rem;
   font-weight: 700;
-  letter-spacing: .75rem;
+  letter-spacing: .65rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba(119, 119, 119, 0.2);
   cursor: default;
@@ -48,7 +49,8 @@ header {
   .heading-secondary:hover {
     transform: scale(1.025) translate(-1rem, -1rem);
     text-shadow: 3rem 3rem 0.5rem rgba(119, 119, 119, 0.2);
-    border-bottom: none; }
+    border-bottom: none;
+    backface-visibility: hidden; }
 
 .heading-tertiary {
   margin: auto;
@@ -60,6 +62,12 @@ header {
 
 .u-margin-top {
   margin-top: 4rem !important; }
+
+.u-margin-bottom {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-med {
+  margin-bottom: 5rem !important; }
 
 .row {
   max-width: 114rem;
@@ -89,6 +97,7 @@ header {
 
 .header {
   position: relative;
+  margin-top: 6rem;
   height: 50rem;
   background-image: linear-gradient(to bottom, #4a919e, #212e53);
   background-size: cover;
@@ -112,21 +121,24 @@ header {
 
 .navbar {
   background-color: #4a919e;
-  margin: 0;
-  height: 8rem;
-  position: relative; }
+  margin: auto;
+  height: 6rem;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent 20%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 80%, transparent 80%) 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; }
   .navbar__linklist {
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
     width: 65%;
-    border-bottom: 1px solid #4a919e;
-    padding-bottom: 2rem;
     padding-top: 2rem;
-    background-image: linear-gradient(to bottom, transparent 98%, rgba(0, 0, 0, 0.2));
     border-radius: 3px; }
   .navbar__item {
     display: inline-block;
@@ -167,12 +179,20 @@ header {
     shape-outside: circle(50% at 50% 45%);
     -webkit-clip-path: circle(50% at 50% 45%);
     clip-path: circle(50% at 50% 45%);
-    transform: translateX(rem);
-    position: relative; }
+    transform: translateX(-3rem);
+    position: relative;
+    drop-shadow: -3px 0 6px #000; }
+    .section-about__shape::after {
+      width: 25rem;
+      height: 25rem;
+      box-shadow: -3px 0 6px #000;
+      -webkit-shape-outside: circle(50% at 50% 45%);
+      shape-outside: circle(50% at 50% 45%); }
   .section-about__img {
     width: 100%;
-    transform: translateY(-5rem); }
+    transform: translateY(-5rem);
+    z-index: 100; }
   .section-about__text {
-    padding-top: 3rem;
-    transform: translateX(5rem);
+    padding-top: 2rem;
+    transform: translateX(2rem);
     line-height: 3rem; }
