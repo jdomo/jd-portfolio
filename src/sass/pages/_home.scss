@@ -35,3 +35,17 @@
   }
 
 }
+
+.section-projects {
+  height: 60rem;
+  background-color: rgba($color-grey-light, 1);
+  padding: 10rem 0 25rem 0;
+  font-size: 1.6rem;
+  position: relative;
+
+  &__img {
+    width: 50rem;
+    position: absolute;
+    border-radius: $border-radius-sml;
+  }
+}
