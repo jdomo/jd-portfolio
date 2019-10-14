@@ -3,9 +3,9 @@ import React, {Component} from 'react';
 class Projects extends Component {
   render() {
     return (
-      <div className="section-projects">
+      <div className="section-projects" id="projects">
         <div className="u-center-text u-margin-bottom-med">
-          <h3 className="heading-secondary" id="about">Projects</h3>
+          <h3 className="heading-secondary">Projects</h3>
         </div>
         <div className="section-projects__project">
           <div className="row">

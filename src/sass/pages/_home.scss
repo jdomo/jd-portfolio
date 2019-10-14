@@ -1,7 +1,7 @@
 .section-about {
-  height: 60rem;
+  height: 70rem;
   margin-top: -27rem;
-  background-color: rgba($color-grey-light, 1);
+  background-image: linear-gradient(to bottom, $color-grey-light 85%, transparent);
   padding: 17rem 0 25rem 0;
   font-size: 1.6rem;
 
@@ -36,12 +36,17 @@
 }
 
 .section-skills {
-  height: 30rem;
-  background-color: $color-grey-dark-2;
+  height: 40rem;
+  padding: 5rem 0 25rem 0;
+  background-image: linear-gradient(
+    to bottom, 
+    $color-blue-light, 
+    $color-blue-dark 95%, transparent); 
 }
 
 .section-projects {
   height: 60rem;
+  margin-top: -1rem;
   background-color: rgba($color-grey-light, 1);
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
