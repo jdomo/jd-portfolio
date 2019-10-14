@@ -33,19 +33,32 @@
     transform: translateX(2rem);
     line-height: 3rem;
   }
+}
 
+.section-skills {
+  height: 30rem;
+  background-color: $color-grey-dark-2;
 }
 
 .section-projects {
   height: 60rem;
   background-color: rgba($color-grey-light, 1);
-  padding: 10rem 0 25rem 0;
+  padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative;
 
+  &__project {
+    // border: 1px solid $color-grey-dark-2;
+    padding: 2.5rem 5rem 5rem 5rem;
+  }
+
+  &__text {
+    line-height: 2.5rem;
+  }
+
   &__img {
     width: 50rem;
-    position: absolute;
     border-radius: $border-radius-sml;
+    box-shadow: 0rem 1rem 2rem $color-grey-dark;
   }
 }
