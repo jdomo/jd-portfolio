@@ -63,7 +63,8 @@ header {
 
   //text color gradient
   display: inline-block;      //background/gradient ends where text ends
-  background-image: linear-gradient(to right, rgba($color-white, .7), $color-white);
+  // background-image: linear-gradient(to right, rgba($color-white, .7), $color-white);
+  color: $color-white;
   -webkit-background-clip: text;    //background shows only where text is present
   color: transparent;               //text allows background clip to show through
 
