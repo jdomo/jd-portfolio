@@ -1,8 +1,9 @@
 .section-about {
-  height: 70rem;
+  height: 62rem;
   margin-top: -27rem;
-  background-image: linear-gradient(to bottom, $color-grey-light 85%, transparent);
-  padding: 17rem 0 25rem 0;
+  // background-color: $color-grey-light;
+  background-image: linear-gradient(to bottom, $color-grey-light 98%, transparent);
+  padding: 20rem 0 50rem 0;
   font-size: 1.6rem;
 
   &__content {
@@ -37,24 +38,27 @@
 
 .section-skills {
   height: 40rem;
-  padding: 5rem 0 25rem 0;
+  padding: 7rem 0 30rem 0;
   background-image: linear-gradient(
     to bottom, 
     $color-blue-light, 
-    $color-blue-dark 95%, transparent); 
+    $color-blue-dark 98%,
+    transparent); 
 }
 
 .section-projects {
-  height: 60rem;
-  margin-top: -1rem;
-  background-color: rgba($color-grey-light, 1);
+  height: 140rem;
+  margin-top: -4rem;
+  // background-color: rgba($color-grey-light, 1);
+  background-image: linear-gradient(to bottom, transparent, $color-grey-light 2%);
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative;
 
   &__project {
     // border: 1px solid $color-grey-dark-2;
-    padding: 2.5rem 5rem 5rem 5rem;
+    text-align: center;
+    padding: 5rem 5rem 7.5rem 5rem;
   }
 
   &__text {
@@ -64,6 +68,12 @@
   &__img {
     width: 50rem;
     border-radius: $border-radius-sml;
-    box-shadow: 0rem 1rem 2rem $color-grey-dark;
+    box-shadow: 0rem 1rem 1.8rem $color-grey-dark;
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.03) translateY(-.5rem);
+      box-shadow: 0rem 1.5rem 3rem $color-grey-dark;
+    }
   }
 }
