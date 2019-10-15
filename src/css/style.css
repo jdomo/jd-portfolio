@@ -220,7 +220,7 @@ header {
 .section-skills {
   height: 40rem;
   margin: auto;
-  border-radius: 3rem;
+  border-radius: 1rem;
   box-shadow: -1rem 0rem 2.8rem #777;
   transform: skew(-15deg);
   width: 75%;
