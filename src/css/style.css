@@ -224,7 +224,11 @@ header {
   transform: skew(-15deg);
   width: 75%;
   padding: 7rem 0 30rem 0;
-  background-image: linear-gradient(to bottom, #4a919e, #212e53); }
+  background-image: linear-gradient(to bottom, #4a919e, #212e53);
+  transition: all .3s; }
+  .section-skills:hover {
+    transform: scale(1.02) translateY(-0.5rem) skew(-15deg);
+    box-shadow: -1.5rem 0rem 3.8rem #777; }
 
 .section-projects {
   height: 140rem;

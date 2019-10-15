@@ -49,8 +49,12 @@
     to bottom, 
     $color-blue-light, 
     $color-blue-dark);
+  transition: all .3s;
     
-    // transparent); 
+  &:hover {
+    transform: scale(1.02) translateY(-.5rem) skew(-$skew-amount);
+    box-shadow: -1.5rem 0rem 3.8rem $color-grey-dark;
+  }
 }
 
 .section-projects {
