@@ -250,5 +250,5 @@ header {
     box-shadow: 0rem 1rem 1.8rem #777;
     transition: all .3s; }
     .section-projects__img:hover {
-      transform: scale(1.03) translateY(-0.5rem);
+      transform: scale(1.015) translateY(-0.5rem);
       box-shadow: 0rem 1.5rem 3rem #777; }
