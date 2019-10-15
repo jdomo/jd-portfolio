@@ -65,8 +65,7 @@ header {
   color: #FFF;
   transition: all .3s; }
   .heading-secondary--2:hover {
-    transform: scale(1.025) translate(-1rem, -1rem);
-    text-shadow: 3rem 3rem 0.5rem rgba(119, 119, 119, 0.2);
+    transform: scale(1.04);
     border-bottom: 1px solid transparent;
     backface-visibility: hidden; }
 
