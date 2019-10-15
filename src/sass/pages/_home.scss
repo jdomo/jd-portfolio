@@ -41,7 +41,7 @@
   margin: auto;
   // margin-top: -5rem;
   border-radius: 1rem;
-  box-shadow: -1rem 0rem 2.8rem $color-grey-dark;
+  box-shadow: -1rem 0 2.8rem $color-grey-dark;
   transform: skew(-$skew-amount);
   width: 75%;
   padding: 7rem 0 30rem 0;
@@ -53,7 +53,7 @@
     
   &:hover {
     transform: scale(1.02) translateY(-.5rem) skew(-$skew-amount);
-    box-shadow: -1.5rem 0rem 3.8rem $color-grey-dark;
+    box-shadow: -1rem 0 3.8rem $color-grey-dark;
   }
 }
 
