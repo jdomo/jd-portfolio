@@ -38,17 +38,24 @@
 
 .section-skills {
   height: 40rem;
+  margin: auto;
+  // margin-top: -5rem;
+  border-radius: 3rem;
+  box-shadow: -1rem 0rem 2.8rem $color-grey-dark;
+  transform: skew(-$skew-amount);
+  width: 75%;
   padding: 7rem 0 30rem 0;
   background-image: linear-gradient(
     to bottom, 
     $color-blue-light, 
-    $color-blue-dark 98%,
-    transparent); 
+    $color-blue-dark);
+    
+    // transparent); 
 }
 
 .section-projects {
   height: 140rem;
-  margin-top: -4rem;
+  // margin-top: -4rem;
   // background-color: rgba($color-grey-light, 1);
   background-image: linear-gradient(to bottom, transparent, $color-grey-light 2%);
   padding: 8rem 0 25rem 0;
@@ -57,16 +64,21 @@
 
   &__project {
     // border: 1px solid $color-grey-dark-2;
-    text-align: center;
+    // text-align: center;
+    margin: auto;
+    width: 95%;
     padding: 5rem 5rem 7.5rem 5rem;
   }
 
   &__text {
     line-height: 2.5rem;
+    margin: auto;
   }
 
   &__img {
     width: 50rem;
+    display: block;
+    margin: auto;
     border-radius: $border-radius-sml;
     box-shadow: 0rem 1rem 1.8rem $color-grey-dark;
     transition: all .3s;

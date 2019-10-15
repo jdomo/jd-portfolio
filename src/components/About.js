@@ -23,6 +23,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <span id="skills"/>
     </section>
   )
 }

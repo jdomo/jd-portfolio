@@ -2,13 +2,13 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div className="section-skills" id="skills">
-      <div className="u-center-text u-margin-bottom-med">
+    <section className="section-skills u-margin-bottom-med">
+      <div className="u-center-text u-unskew">
         <h3 className="heading-secondary--2">
           Skills
         </h3>
       </div>
-    </div>
+    </section>
   )
 }
 
