@@ -77,10 +77,11 @@
     position: relative;
     display: inline-block;
     transition: all .3s;
+    margin: auto;
   
     &:hover {
       transform: scale(1.015) translateY(-.5rem);
-      box-shadow: 0rem 1.5rem 3rem $color-grey-dark;
+      box-shadow: 0rem 1.5rem 3rem $color-grey-dark-2;
     }
 
     &:hover .project__img {
@@ -102,18 +103,20 @@
   }
   
   &__link {
-    text-decoration: none;
     display: inline-block;
     text-align: center;
     width: 12rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    opacity: 0;      
+
     border-radius: $border-radius-sml;
     background-image: linear-gradient($color-blue-dark, $color-blue-light);
     padding: 1.5rem;
     color: $color-white;
-    transition: all .3s;
-    letter-spacing: 1px;
     box-shadow: 0rem .5rem .5rem rgba($color-black, .8);
-    opacity: 0;      
+
+    transition: all .3s;
 
     &:not(:first-child) {
       margin-left: 3rem;
@@ -131,7 +134,7 @@
   }
   
   &__img {
-    width: 50rem;
+    width: 100%;
     display: block;
     margin: auto;
     border-radius: $border-radius-sml;

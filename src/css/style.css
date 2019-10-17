@@ -266,10 +266,11 @@ header {
   .project__img-container {
     position: relative;
     display: inline-block;
-    transition: all .3s; }
+    transition: all .3s;
+    margin: auto; }
     .project__img-container:hover {
       transform: scale(1.015) translateY(-0.5rem);
-      box-shadow: 0rem 1.5rem 3rem #777; }
+      box-shadow: 0rem 1.5rem 3rem #999; }
     .project__img-container:hover .project__img {
       filter: brightness(75%) blur(0.5px); }
     .project__img-container:hover .project__link {
@@ -282,18 +283,18 @@ header {
     width: 100%;
     text-align: center; }
   .project__link {
-    text-decoration: none;
     display: inline-block;
     text-align: center;
     width: 12rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    opacity: 0;
     border-radius: 3px;
     background-image: linear-gradient(#212e53, #4a919e);
     padding: 1.5rem;
     color: #FFF;
-    transition: all .3s;
-    letter-spacing: 1px;
     box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
-    opacity: 0; }
+    transition: all .3s; }
     .project__link:not(:first-child) {
       margin-left: 3rem; }
     .project__link:hover {
@@ -303,7 +304,7 @@ header {
       transform: translateY(0);
       box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
   .project__img {
-    width: 50rem;
+    width: 100%;
     display: block;
     margin: auto;
     border-radius: 3px;

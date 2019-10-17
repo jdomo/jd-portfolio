@@ -10,7 +10,7 @@ class Projects extends Component {
         <div className="project">
           <div className="row">
             <div className="col-1-of-2">
-              <div class="project__img-container">
+              <div className="project__img-container">
                 <img src="img/how-many-words.png" alt="How Many Words" className="project__img"></img>
                 <div className="project__links">
                   <a href="https://pages.git.generalassemb.ly/jdomo/how-many-words/" className="project__link">Website</a>
@@ -60,8 +60,8 @@ class Projects extends Component {
               </p>
             </div>
             <div className="col-1-of-2">
-              <div class="project__img-container">
-                <img src="img/watch-your-tone.png" alt="Watch Your Tone" className="project__img"></img>
+              <div className="project__img-container">
+                <img src="img/watch-your-tone.png" alt="Watch Your Tone" className="project__img"/>
                 <div className="project__links">
                   <a href="https://watch-your-tone.herokuapp.com/" className="project__link">Website</a>
                   <a href="http://www.github.com" className="project__link">Repo</a>
@@ -74,7 +74,7 @@ class Projects extends Component {
         <div className="project">
           <div className="row">
             <div className="col-1-of-2">
-              <div class="project__img-container">
+              <div className="project__img-container">
                 <img src="img/best-dish.png" alt="Best Dish" className="project__img"></img>      
                 <div className="project__links">
                   <a href="https://sei-bestdish.herokuapp.com/" className="project__link">Website</a>
