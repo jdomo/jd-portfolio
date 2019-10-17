@@ -18,6 +18,9 @@ class Projects extends Component {
                 How Many Words can you make out of 9 random letters? Set your high score, then step your game up and try to top it. You've got 120 seconds.
                 All you need is a web browser, a keyboard and your smarty pants.
               </p>
+              <p className="section-projects__icons">
+                <i class="devicon-html5-plain"></i>
+              </p>
             </div>
           </div>
         </div>

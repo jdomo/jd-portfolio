@@ -73,6 +73,8 @@ header {
   margin: auto;
   font-weight: 700;
   font-size: 3rem; }
+  .heading-tertiary--sub {
+    font-size: 2rem; }
 
 .u-center-text {
   text-align: center !important; }
