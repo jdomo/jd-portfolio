@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="#projects" className="navbar__link">Projects</a>
         </li>
         <li className="navbar__item">
-          <a href="#" className="navbar__link">Experience</a>
+          <a href="/docs/jdomovitchresume.pdf" className="navbar__link">Resume</a>
         </li>
         <li className="navbar__item">
           <a href="#" className="navbar__link">Education</a>
