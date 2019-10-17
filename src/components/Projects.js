@@ -18,8 +18,14 @@ class Projects extends Component {
                 How Many Words can you make out of 9 random letters? Set your high score, then step your game up and try to top it. You've got 120 seconds.
                 All you need is a web browser, a keyboard and your smarty pants.
               </p>
-              <p className="section-projects__icons">
-                <i class="devicon-html5-plain"></i>
+              <h4 className="heading-tertiary--sub u-margin-top">
+                Built with HTML, CSS, JavaScript, GitHub
+              </h4>
+              <p className="section-projects__icons u-margin-top-sml">
+                <i className="devicon-html5-plain section-projects__icon"></i>
+                <i className="devicon-css3-plain section-projects__icon"></i>
+                <i className="devicon-javascript-plain section-projects__icon"></i>
+                <i className="devicon-github-plain section-projects__icon"></i>
               </p>
             </div>
           </div>
@@ -31,6 +37,19 @@ class Projects extends Component {
               <p className="section-projects__text">
               Ever wonder about how an AI interprets the things we say? Using IBM's Tone Analyzer, 
               Watch Your Tone enlists the processing power of Watson to determine the emotional content of your favourite phrases and quotes.
+              </p>
+              <h4 className="heading-tertiary--sub u-margin-top">
+                Built with HTML, CSS, JavaScript, React, Express.js, IBM Watson & Tone Analyzer, NodeJS, MongoDB, Mongoose, Materialize, Chart.js, Github
+              </h4>
+              <p className="section-projects__icons u-margin-top-sml">
+                <i className="devicon-html5-plain section-projects__icon"></i>
+                <i className="devicon-css3-plain section-projects__icon"></i>
+                <i className="devicon-javascript-plain section-projects__icon"></i>
+                <i className="devicon-react-original-wordmark section-projects__icon"></i>
+                <i className="devicon-express-original section-projects__icon"></i>
+                <i className="devicon-nodejs-plain section-projects__icon"></i>
+                <i className="devicon-mongodb-plain section-projects__icon"></i>
+                <i className="devicon-github-plain section-projects__icon"></i>
               </p>
             </div>
             <div className="col-1-of-2">
@@ -48,6 +67,18 @@ class Projects extends Component {
               <p className="section-projects__text">
                 Food blog with CRUD functionality. Many food websites focus mainly on the restaurant - 
                 Best Dish is all about the star of the show, the food. Sign up today and share your best dish!
+              </p>
+              <h4 className="heading-tertiary--sub u-margin-top">
+                Built with HTML, CSS, JavaScript, Express.js, NodeJS, MongoDB, Mongoose, Github
+              </h4>
+              <p className="section-projects__icons u-margin-top-sml">
+                <i className="devicon-html5-plain section-projects__icon"></i>
+                <i className="devicon-css3-plain section-projects__icon"></i>
+                <i className="devicon-javascript-plain section-projects__icon"></i>
+                <i className="devicon-express-original section-projects__icon"></i>
+                <i className="devicon-nodejs-plain section-projects__icon"></i>
+                <i className="devicon-mongodb-plain section-projects__icon"></i>
+                <i className="devicon-github-plain section-projects__icon"></i>
               </p>
             </div>
           </div>

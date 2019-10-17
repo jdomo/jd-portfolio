@@ -77,11 +77,6 @@
     padding: 5rem 5rem 7.5rem 5rem;
   }
 
-  &__text {
-    line-height: 2.5rem;
-    margin: auto;
-  }
-
   &__img {
     width: 50rem;
     display: block;
@@ -94,5 +89,10 @@
       transform: scale(1.015) translateY(-.5rem);
       box-shadow: 0rem 1.5rem 3rem $color-grey-dark;
     }
+  }
+
+  &__icons {
+    background-image: linear-gradient$color-blue-light;
+    font-size: 3rem;
   }
 }

@@ -41,8 +41,8 @@ header {
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba(119, 119, 119, 0.2);
   cursor: default;
-  display: inline-block;
   background-image: linear-gradient(to right, rgba(33, 46, 83, 0.7), #212e53);
+  display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
   transition: all .3s; }
@@ -74,13 +74,34 @@ header {
   font-weight: 700;
   font-size: 3rem; }
   .heading-tertiary--sub {
-    font-size: 2rem; }
+    margin: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem; }
+
+.section-projects__text {
+  line-height: 2.5rem;
+  margin: auto; }
+
+.section-projects__icons {
+  background-image: linear-gradient(#212e53, #4a919e);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.section-projects__icon {
+  font-size: 4rem; }
+  .section-projects__icon:not(:first-child) {
+    padding-left: 1rem; }
 
 .u-center-text {
   text-align: center !important; }
 
 .u-margin-top {
   margin-top: 4rem !important; }
+
+.u-margin-top-sml {
+  margin-top: 2rem !important; }
 
 .u-margin-bottom {
   margin-bottom: 4rem !important; }
@@ -241,9 +262,6 @@ header {
     margin: auto;
     width: 95%;
     padding: 5rem 5rem 7.5rem 5rem; }
-  .section-projects__text {
-    line-height: 2.5rem;
-    margin: auto; }
   .section-projects__img {
     width: 50rem;
     display: block;
@@ -254,3 +272,6 @@ header {
     .section-projects__img:hover {
       transform: scale(1.015) translateY(-0.5rem);
       box-shadow: 0rem 1.5rem 3rem #777; }
+  .section-projects__icons {
+    background-image: linear-gradient #4a919e;
+    font-size: 3rem; }

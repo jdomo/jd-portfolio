@@ -5,3 +5,9 @@
     display: table;
   }
 }
+
+@mixin text-gradient {
+  display: inline-block;            //background/gradient ends where text ends
+  -webkit-background-clip: text;    //background shows only where text is present
+  color: transparent;               //text allows background clip to show through
+}

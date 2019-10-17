@@ -36,10 +36,8 @@ header {
   cursor: default;
 
   //text color gradient
-  display: inline-block;      //background/gradient ends where text ends
   background-image: linear-gradient(to right, rgba($color-blue-dark, .7), $color-blue-dark);
-  -webkit-background-clip: text;    //background shows only where text is present
-  color: transparent;               //text allows background clip to show through
+  @include text-gradient;
 
   transition: all .3s;
 
@@ -80,6 +78,27 @@ header {
   font-size: 3rem;
 
   &--sub {
-    font-size: 2rem;
+    margin: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+.section-projects {
+  &__text {
+    line-height: 2.5rem;
+    margin: auto;
+  }
+  &__icons {
+    background-image: linear-gradient($color-blue-dark, $color-blue-light);
+    @include text-gradient;
+  }
+  &__icon {
+    font-size: 4rem;
+
+    &:not(:first-child) {
+      padding-left: 1rem;
+    }
   }
 }
