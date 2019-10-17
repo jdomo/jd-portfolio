@@ -79,19 +79,19 @@ header {
     font-size: 1.5rem;
     line-height: 2.2rem; }
 
-.section-projects__text {
+.project__text {
   line-height: 2.5rem;
   margin: auto; }
 
-.section-projects__icons {
+.project__icons {
   background-image: linear-gradient(#212e53, #4a919e);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent; }
 
-.section-projects__icon {
+.project__icon {
   font-size: 4rem; }
-  .section-projects__icon:not(:first-child) {
+  .project__icon:not(:first-child) {
     padding-left: 1rem; }
 
 .u-center-text {
@@ -258,20 +258,56 @@ header {
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative; }
-  .section-projects__project {
-    margin: auto;
-    width: 95%;
-    padding: 5rem 5rem 7.5rem 5rem; }
-  .section-projects__img {
+
+.project {
+  margin: auto;
+  width: 95%;
+  padding: 5rem 5rem 7.5rem 5rem; }
+  .project__img-container {
+    position: relative;
+    display: inline-block;
+    transition: all .3s; }
+    .project__img-container:hover {
+      transform: scale(1.015) translateY(-0.5rem);
+      box-shadow: 0rem 1.5rem 3rem #777; }
+    .project__img-container:hover .project__img {
+      filter: brightness(75%) blur(0.5px); }
+    .project__img-container:hover .project__link {
+      opacity: 1; }
+  .project__links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+  .project__link {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 12rem;
+    border-radius: 3px;
+    background-image: linear-gradient(#212e53, #4a919e);
+    padding: 1.5rem;
+    color: #FFF;
+    transition: all .3s;
+    letter-spacing: 1px;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
+    opacity: 0; }
+    .project__link:not(:first-child) {
+      margin-left: 3rem; }
+    .project__link:hover {
+      transform: scale(1.02) translateY(-1px);
+      box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.8); }
+    .project__link:active {
+      transform: translateY(0);
+      box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
+  .project__img {
     width: 50rem;
     display: block;
     margin: auto;
     border-radius: 3px;
-    box-shadow: 0rem 1rem 1.8rem #777;
+    box-shadow: 0rem 1rem 1.8rem #999;
     transition: all .3s; }
-    .section-projects__img:hover {
-      transform: scale(1.015) translateY(-0.5rem);
-      box-shadow: 0rem 1.5rem 3rem #777; }
-  .section-projects__icons {
-    background-image: linear-gradient #4a919e;
+  .project__icons {
     font-size: 3rem; }
