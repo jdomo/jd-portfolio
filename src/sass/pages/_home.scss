@@ -81,7 +81,7 @@
   
     &:hover {
       transform: scale(1.015) translateY(-.5rem);
-      box-shadow: 0rem 1.5rem 3rem $color-grey-dark-2;
+      box-shadow: 0rem 1.5rem 3rem rgba($color-black, .8);
     }
 
     &:hover .project__img {

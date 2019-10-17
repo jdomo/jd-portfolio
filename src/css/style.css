@@ -270,7 +270,7 @@ header {
     margin: auto; }
     .project__img-container:hover {
       transform: scale(1.015) translateY(-0.5rem);
-      box-shadow: 0rem 1.5rem 3rem #999; }
+      box-shadow: 0rem 1.5rem 3rem rgba(0, 0, 0, 0.8); }
     .project__img-container:hover .project__img {
       filter: brightness(75%) blur(0.5px); }
     .project__img-container:hover .project__link {
