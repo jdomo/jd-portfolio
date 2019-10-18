@@ -14,7 +14,7 @@ class Projects extends Component {
                 <img src="img/how-many-words.png" alt="How Many Words" className="project__img"></img>
                 <div className="project__links">
                   <a href="https://pages.git.generalassemb.ly/jdomo/how-many-words/" className="project__link" target="_blank" rel="noopener noreferrer">Website</a>
-                  <a href="https://github.com/jdomo/how-many-words" className="project__link" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="https://github.com/jdomo/how-many-words" className="project__link" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ class Projects extends Component {
                 <img src="img/watch-your-tone.png" alt="Watch Your Tone" className="project__img"/>
                 <div className="project__links">
                   <a href="https://watch-your-tone.herokuapp.com/" className="project__link" target="_blank" rel="noopener noreferrer">Website</a>
-                  <a href="http://www.github.com" className="project__link" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="http://www.github.com" className="project__link" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </div>
             </div>
@@ -78,7 +78,7 @@ class Projects extends Component {
                 <img src="img/best-dish.png" alt="Best Dish" className="project__img"></img>      
                 <div className="project__links">
                   <a href="https://sei-bestdish.herokuapp.com/" className="project__link" target="_blank" rel="noopener noreferrer">Website</a>
-                  <a href="https://github.com/jdomo/best-dish" className="project__link" target="_blank" rel="noopener noreferrer">Repo</a>
+                  <a href="https://github.com/jdomo/best-dish" className="project__link" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
               </div>
             </div>
