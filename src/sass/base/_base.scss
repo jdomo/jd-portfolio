@@ -10,6 +10,14 @@
 //Default font-size of 10px (10px/16px)
 html {
   font-size: 62.5%;
+
+  @media (max-width: 600px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 50%;
+  }
 }
 
 //All elements inherit border-box sizing and background color
