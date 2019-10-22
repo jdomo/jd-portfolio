@@ -11,3 +11,13 @@
   -webkit-background-clip: text;    //background shows only where text is present
   color: transparent;               //text allows background clip to show through
 }
+
+@mixin absCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
