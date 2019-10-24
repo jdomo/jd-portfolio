@@ -34,7 +34,7 @@ class Navbar extends Component {
             <a href="#projects" className="navbar__link" onClick={this.toggleClass}>Projects</a>
           </li>
           <li className={this.state.active ? 'navbar__item' : 'navbar__item navbar__item--hide'}>
-            <a href="/docs/jdomovitchresume.pdf" className="navbar__link" target="_blank" rel="noopener noreferrer" onClick={this.toggleClass}>Resume</a>
+            <a href="/docs/jdomovitchresume.pdf" className="navbar__link" target="_blank" rel="noopener noreferrer">Resume</a>
           </li>
         </ul>
       </nav>
