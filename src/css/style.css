@@ -195,12 +195,11 @@ header {
   left: 0;
   width: 100%;
   z-index: 2;
-  transition: all .3s; }
+  transition: all .6s ease; }
   @media (max-width: 600px) {
     .navbar {
-      transition: all .3s;
       border: none;
-      height: max-content;
+      height: 30rem;
       overflow: hidden;
       position: sticky; }
       .navbar--hide {
@@ -240,7 +239,7 @@ header {
       .navbar__linklist {
         position: relative;
         left: 0%;
-        top: 20%;
+        top: 0%;
         padding: none;
         transform: none;
         width: 100%;
@@ -257,9 +256,8 @@ header {
     @media (max-width: 600px) {
       .navbar__item {
         display: block;
-        padding: 0 0 2rem 0; }
-        .navbar__item:not(:first-child) {
-          margin-top: 2rem; } }
+        padding: 0 0 2rem 0;
+        margin-top: 2rem; } }
   .navbar__link, .navbar__link:link, .navbar__link:visited {
     transition: all .3s;
     text-decoration: none;

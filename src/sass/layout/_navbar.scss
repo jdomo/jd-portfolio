@@ -11,13 +11,11 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  transition: all .3s;
+  transition: all .6s ease;
 
-  @include respond($respond-nav-collapse) {
-    transition: all .3s;
-    
+  @include respond($respond-nav-collapse) {    
     border: none;
-    height: max-content;
+    height: 30rem;
     overflow: hidden;
     position: sticky;
 
@@ -68,7 +66,7 @@
     @include respond($respond-nav-collapse) {
       position: relative;
       left: 0%;
-      top: 20%;
+      top: 0%;
       padding: none;
       transform: none;
       width: 100%;
@@ -91,15 +89,7 @@
     @include respond($respond-nav-collapse) {
       display: block;
       padding: 0 0 2rem 0;
-
-      &:not(:first-child) {
-        margin-top: 2rem;
-      }
-      
-      // &--hide {
-      //   display: none;
-      //   height: 0;
-      // }
+      margin-top: 2rem;
     }
   }
 
