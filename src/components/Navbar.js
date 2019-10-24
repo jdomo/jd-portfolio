@@ -4,6 +4,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="navbar__linklist">
+        <button className="navbar__button">❖</button>
         <li className="navbar__item">
           <a href="#about" className="navbar__link">About Me</a>
         </li>

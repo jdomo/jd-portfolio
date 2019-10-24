@@ -29,15 +29,14 @@
 1800px+: big desktop
 */
 
-@mixin respond-phone {
-  @media (max-width: 600px) { @content };
-}
-
-//BEST PRACTICE - use breakpoint as a parameter
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 600px) {@content}
+  @if $breakpoint == $respond-nav-shrink {
+    @media (max-width: $respond-nav-shrink) {@content};
+  }
+  @if $breakpoint == $respond-nav-collapse {
+    @media (max-width: $respond-nav-collapse) {@content};
   }
 }
+
 
 

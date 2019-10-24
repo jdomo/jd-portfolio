@@ -4,15 +4,48 @@
   background-color: $color-blue-light;
   margin: auto;
   height: $navbar-height;
-  // border-bottom: 1px solid rgba($color-black, .1);
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, transparent 20%, rgba($color-black, .1) 20%, rgba($color-black, .1) 80%, transparent 80%) 50;
-  // position: relative;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
+
+  @include respond($respond-nav-collapse) {
+    border: none;
+    height: max-content;
+    position: sticky;
+    clear: both;
+  }
+
+  &__button {
+    display: none;
+    margin: auto;
+    background: transparent;
+    border: none;
+    color: $color-white;
+    transform: rotate(45deg);
+    font-size: 3rem;
+    transition: all .3s;
+    backface-visibility: hidden;
+    outline: none;
+
+    @include respond($respond-nav-collapse) {
+      display: inline-block;
+
+      &:hover {
+        transform: scale(1.3) rotate(45deg);
+        transform-origin: 45% 40%;
+        cursor: pointer;
+        padding-bottom: 1rem;
+      }
+
+      &:active {
+        transform: scale(1.3) rotate(-90deg);
+      }
+    }
+  }
   
   &__linklist {
     position: absolute;
@@ -23,9 +56,22 @@
     list-style: none;
     text-align: center;
     width: 65%;
-    // padding-bottom: 2rem;
     padding-top: 2rem;
     border-radius: $border-radius-sml;
+
+    @include respond($respond-nav-shrink) {
+      width: 95%;
+    }
+
+    @include respond($respond-nav-collapse) {
+      position: relative;
+      left: 0%;
+      top: 0%;
+      padding: none;
+      transform: none;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__item {
@@ -34,6 +80,16 @@
     font-weight: 500;
     padding: 0 3rem;
     border-radius: 3px;
+
+    @include respond($respond-nav-shrink) {
+      padding: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    @include respond($respond-nav-collapse) {
+      display: block;
+      padding-bottom: 2rem;
+    }
   }
 
   &__link {
@@ -52,6 +108,11 @@
     &:active {
       border-top: 4px solid $color-tertiary-light;
       border-radius: $border-radius-sml;
+
+      @include respond($respond-nav-collapse) {
+        border: none;
+        background-color: rgba($color-blue-dark, 0.2);
+      }
     }
 
     &:target,
