@@ -43,8 +43,6 @@ header {
     letter-spacing: .8rem; }
     @media (max-width: 931px) {
       .heading-primary--main {
-        display: inline-block;
-        width: 100%;
         letter-spacing: .7rem;
         font-size: 4.25rem;
         line-height: 5.5rem; } }
@@ -206,6 +204,7 @@ header {
   .header__text-box {
     position: absolute;
     text-align: center;
+    width: 80%;
     /* center in relation to parent element */
     top: 30%;
     left: 50%;

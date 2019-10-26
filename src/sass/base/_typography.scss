@@ -16,12 +16,11 @@ header {
     letter-spacing: .8rem;
 
     @include respond($respond-nav-shrink) {
-      display: inline-block;
-      width: 100%;
       letter-spacing: .7rem; 
       font-size: 4.25rem;
       line-height: 5.5rem;     
     }
+
   }
   
   &--sub {

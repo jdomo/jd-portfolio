@@ -32,12 +32,13 @@
   &__text-box {
     position: absolute;
     text-align: center;
+    width: 80%;
     
     /* center in relation to parent element */
     top: 30%;
     left: 50%;
     
     /* center in relation to element itself */    
-    transform: translate(-50%, -40%)
+    transform: translate(-50%, -40%);
   }
 }
