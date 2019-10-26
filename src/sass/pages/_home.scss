@@ -11,6 +11,11 @@
     position: relative;
     width: 60%;
     margin: auto;
+
+    @include respond($respond-nav-shrink) {
+      width: 75%;
+      padding: 2rem 0 5rem 0;
+    }
   }
 
   &__shape { 
@@ -44,8 +49,10 @@
     
     @include respond($respond-nav-shrink) {
       text-align: center;
-      display: block;
-      margin-bottom: 5rem;
+      display: inline-block;
+      margin-bottom: 3rem;
+      transform: none;
+      padding-top: 4rem;
     }
   }
 

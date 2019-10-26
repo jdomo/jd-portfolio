@@ -21,7 +21,7 @@ html {
   font-size: 62.5%; }
   @media (max-width: 600px) {
     html {
-      font-size: 50%;
+      font-size: 55%;
       width: 100%; } }
 
 body {
@@ -322,6 +322,10 @@ header {
     position: relative;
     width: 60%;
     margin: auto; }
+    @media (max-width: 931px) {
+      .section-about__content {
+        width: 75%;
+        padding: 2rem 0 5rem 0; } }
   .section-about__shape {
     width: 25rem;
     height: 25rem;
@@ -348,8 +352,10 @@ header {
     @media (max-width: 931px) {
       .section-about__text {
         text-align: center;
-        display: block;
-        margin-bottom: 5rem; } }
+        display: inline-block;
+        margin-bottom: 3rem;
+        transform: none;
+        padding-top: 4rem; } }
   @media (max-width: 931px) {
     .section-about {
       height: max-content; } }
