@@ -40,5 +40,9 @@
     
     /* center in relation to element itself */    
     transform: translate(-50%, -40%);
+
+    @include respond($respond-nav-collapse) {
+      width: 75%;
+    }
   }
 }

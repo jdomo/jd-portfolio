@@ -210,6 +210,9 @@ header {
     left: 50%;
     /* center in relation to element itself */
     transform: translate(-50%, -40%); }
+    @media (max-width: 600px) {
+      .header__text-box {
+        width: 75%; } }
 
 .navbar {
   background-color: #4a919e;
