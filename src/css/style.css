@@ -41,11 +41,21 @@ header {
     font-size: 5.0rem;
     font-weight: 700;
     letter-spacing: .8rem; }
+    @media (max-width: 931px) {
+      .heading-primary--main {
+        display: inline-block;
+        width: 100%;
+        letter-spacing: .7rem;
+        font-size: 4.25rem;
+        line-height: 5.5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: .6rem; }
+    @media (max-width: 931px) {
+      .heading-primary--sub {
+        font-size: 3rem; } }
 
 .heading-secondary {
   font-size: 4rem;
@@ -64,6 +74,10 @@ header {
     text-shadow: 3rem 3rem 0.5rem rgba(119, 119, 119, 0.2);
     border-bottom: 1px solid transparent;
     backface-visibility: hidden; }
+    @media (max-width: 931px) {
+      .heading-secondary:hover:hover {
+        transform: none;
+        text-shadow: none; } }
   .heading-secondary--2 {
     font-size: 4rem;
     font-weight: 700;
@@ -80,6 +94,9 @@ header {
       transform: scale(1.04);
       border-bottom: 1px solid transparent;
       backface-visibility: hidden; }
+    @media (max-width: 931px) {
+      .heading-secondary--2 {
+        margin-right: 0; } }
 
 .heading-tertiary {
   font-family: 'Josefin Sans', sans-serif;
@@ -130,6 +147,9 @@ header {
 
 .u-unskew {
   transform: skew(15deg); }
+  @media (max-width: 931px) {
+    .u-unskew {
+      transform: none; } }
 
 .row {
   max-width: 114rem;
@@ -144,8 +164,16 @@ header {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5rem; }
+      @media (max-width: 931px) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
   .row .col-1-of-2 {
     width: calc((100% - 5rem) / 2); }
+    @media (max-width: 931px) {
+      .row .col-1-of-2 {
+        width: 80%;
+        float: none;
+        text-align: center; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 5rem) / 3); }
   .row .col-2-of-3 {
@@ -285,7 +313,7 @@ header {
         background-color: rgba(33, 46, 83, 0.2); } }
 
 .section-about {
-  height: 62rem;
+  height: 80rem;
   margin-top: -27rem;
   background-image: linear-gradient(to bottom, #e9e9e9 98%, transparent);
   padding: 20rem 0 50rem 0;
@@ -303,6 +331,12 @@ header {
     -webkit-clip-path: circle(50% at 50% 45%);
     clip-path: circle(50% at 50% 45%);
     transform: translateX(-3rem); }
+    @media (max-width: 931px) {
+      .section-about__shape {
+        float: none;
+        display: block;
+        margin: auto;
+        transform: none; } }
   .section-about__img {
     width: 100%;
     transform: translateY(-5rem);
@@ -310,7 +344,11 @@ header {
   .section-about__text {
     padding-top: 2rem;
     transform: translateX(2rem);
-    line-height: 3rem; }
+    line-height: 3rem;
+    text-align: center; }
+    @media (max-width: 931px) {
+      .section-about__text {
+        display: block; } }
 
 .section-skills {
   height: 40rem;
@@ -325,6 +363,20 @@ header {
   .section-skills:hover {
     transform: scale(1.02) translateY(-0.5rem) skew(-15deg);
     box-shadow: -1rem 0 3.8rem #777; }
+  @media (max-width: 931px) {
+    .section-skills {
+      box-shadow: none;
+      transform: none;
+      border-radius: .3rem;
+      width: 95%;
+      padding: 7rem 0 10rem 0;
+      margin-top: 5rem; }
+      .section-skills:hover {
+        transform: none;
+        box-shadow: none; } }
+  @media (max-width: 600px) {
+    .section-skills {
+      margin-top: 0; } }
 
 .section-projects {
   height: 140rem;
@@ -332,6 +384,9 @@ header {
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative; }
+  @media (max-width: 600px) {
+    .section-projects {
+      height: 2rem; } }
 
 .project {
   margin: auto;
@@ -350,6 +405,12 @@ header {
       filter: brightness(75%) blur(0.5px); }
     .project__img-container:hover .project__link {
       opacity: 1; }
+    @media (max-width: 931px) {
+      .project__img-container {
+        width: 100%; }
+        .project__img-container:hover {
+          transform: none;
+          box-shadow: none; } }
   .project__links {
     position: absolute;
     left: 50%;
@@ -357,6 +418,10 @@ header {
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center; }
+    @media (max-width: 931px) {
+      .project__links {
+        width: 100%;
+        display: none; } }
   .project__link {
     display: inline-block;
     text-align: center;
@@ -385,6 +450,9 @@ header {
     border-radius: 3px;
     box-shadow: 0rem 1rem 1.8rem #999;
     transition: all .3s; }
+    @media (max-width: 931px) {
+      .project__img {
+        display: none; } }
   .project__icons {
     font-size: 3rem; }
     @media (max-width: 600px) {

@@ -12,11 +12,21 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+      
+      @include respond($respond-nav-shrink) {
+        margin-right: 0;
+      }
     }
   }
 
   .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
+
+    @include respond($respond-nav-shrink) {
+      width: 80%;
+      float: none;
+      text-align: center;
+    }
   }
 
   .col-1-of-3 {

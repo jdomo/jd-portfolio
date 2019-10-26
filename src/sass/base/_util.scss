@@ -28,4 +28,8 @@
 
 .u-unskew {
   transform: skew($skew-amount);
+  
+  @include respond($respond-nav-shrink) {
+    transform: none;
+  }
 }

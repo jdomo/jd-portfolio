@@ -8,13 +8,20 @@ header {
 
 .heading-primary {
   color: $color-white;
-  // text-transform: uppercase;
 
   &--main {
     display: block;
     font-size: 5.0rem;
     font-weight: 700;
     letter-spacing: .8rem;
+
+    @include respond($respond-nav-shrink) {
+      display: inline-block;
+      width: 100%;
+      letter-spacing: .7rem; 
+      font-size: 4.25rem;
+      line-height: 5.5rem;     
+    }
   }
   
   &--sub {
@@ -22,6 +29,10 @@ header {
     font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: .6rem;
+
+    @include respond($respond-nav-shrink) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -46,6 +57,13 @@ header {
     text-shadow: 3rem 3rem .5rem rgba($color-grey-dark, .2);
     border-bottom: 1px solid transparent;
     backface-visibility: hidden;
+
+    @include respond($respond-nav-shrink) {
+      &:hover {
+        transform: none;
+        text-shadow: none;
+      }
+    }
   }
 
   &--2 {
@@ -67,6 +85,10 @@ header {
       transform: scale(1.04);
       border-bottom: 1px solid transparent;
       backface-visibility: hidden;
+    }
+
+    @include respond($respond-nav-shrink) {
+      margin-right: 0;
     }
   }
 }
