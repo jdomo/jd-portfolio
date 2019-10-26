@@ -1,10 +1,10 @@
 .section-about {
   //media queries at 1060px
 
-  height: 80rem;
+  height: 70rem;
   margin-top: -27rem;
   background-image: linear-gradient(to bottom, $color-grey-light 98%, transparent);
-  padding: 20rem 0 50rem 0;
+  padding: 20rem 0 0 0;
   font-size: 1.6rem;
 
   &__content {
@@ -41,11 +41,16 @@
     padding-top: 2rem;
     transform: translateX(2rem);
     line-height: 3rem;
-    text-align: center;
-
+    
     @include respond($respond-nav-shrink) {
+      text-align: center;
       display: block;
+      margin-bottom: 5rem;
     }
+  }
+
+  @include respond($respond-nav-shrink) {
+    height: max-content;
   }
 }
 
