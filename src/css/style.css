@@ -164,14 +164,19 @@ header {
       margin-right: 5rem; }
       @media (max-width: 931px) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          margin-left: 0; } }
+    @media (max-width: 931px) {
+      .row [class^="col-"] {
+        float: none; } }
   .row .col-1-of-2 {
     width: calc((100% - 5rem) / 2); }
     @media (max-width: 931px) {
       .row .col-1-of-2 {
         width: 80%;
         float: none;
-        text-align: center; } }
+        text-align: center;
+        margin: auto; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 5rem) / 3); }
   .row .col-2-of-3 {

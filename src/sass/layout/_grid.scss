@@ -15,7 +15,13 @@
       
       @include respond($respond-nav-shrink) {
         margin-right: 0;
+        margin-left: 0;
       }
+    }
+    @include respond($respond-nav-shrink) {
+      // margin-right: 0;
+      // margin-left: 0;
+      float: none;
     }
   }
 
@@ -26,6 +32,7 @@
       width: 80%;
       float: none;
       text-align: center;
+      margin: auto;
     }
   }
 
