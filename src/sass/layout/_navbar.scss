@@ -17,7 +17,7 @@
     border: none;
     height: 30rem;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
 
     &--hide {
       height: $navbar-height;

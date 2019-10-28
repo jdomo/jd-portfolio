@@ -204,9 +204,6 @@ header {
   background-position: top;
   -webkit-clip-path: ellipse(80% 80% at 50% -10%);
   clip-path: ellipse(90% 80% at 50% -12%); }
-  @media (max-width: 600px) {
-    .header {
-      margin-top: 0; } }
   .header__logo-box {
     position: absolute;
     top: 100%;
@@ -243,7 +240,7 @@ header {
       border: none;
       height: 30rem;
       overflow: hidden;
-      position: sticky; }
+      position: fixed; }
       .navbar--hide {
         height: 6rem;
         transition-delay: .4s; } }

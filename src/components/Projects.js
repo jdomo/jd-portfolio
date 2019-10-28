@@ -92,6 +92,10 @@ class Projects extends Component {
             </div>
             <div className="col-1-of-2">
               <h3 className="heading-tertiary u-margin-bottom-sml">Best Dish</h3>
+              <div className="project__links--mobile">
+                <a href="https://sei-bestdish.herokuapp.com/" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="https://github.com/jdomo/best-dish" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
               <p className="project__text">
                 Food blog with CRUD functionality. Many food websites focus mainly on the restaurant - 
                 Best Dish is all about the star of the show, the food. Sign up today and share your best dish!

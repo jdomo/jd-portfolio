@@ -14,9 +14,9 @@
   -webkit-clip-path: ellipse(80% 80% at 50% -10%);
   clip-path: ellipse(90% 80% at 50% -12%);
 
-  @include respond($respond-nav-collapse) {
-    margin-top: 0;
-  }
+  // @include respond($respond-nav-collapse) {
+  //   margin-top: 0;
+  // }
 
   
   &__logo-box {

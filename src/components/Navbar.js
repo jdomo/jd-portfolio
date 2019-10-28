@@ -14,7 +14,6 @@ class Navbar extends Component {
   }
 
   render() {
-    console.log(this.state, '<---state');
     return (
       <nav className={this.state.active ? 'navbar' : 'navbar navbar--hide'}>
         <div className="u-center-text">
@@ -34,7 +33,7 @@ class Navbar extends Component {
             <a href="#projects" className="navbar__link" onClick={this.toggleClass}>Projects</a>
           </li>
           <li className={this.state.active ? 'navbar__item' : 'navbar__item navbar__item--hide'}>
-            <a href="/docs/jdomovitchresume.pdf" className="navbar__link" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/docs/jdomovitchresume.pdf" className="navbar__link" target="_blank" rel="noopener noreferrer">Resume <i class="fas fa-external-link-alt"></i></a>
           </li>
         </ul>
       </nav>
