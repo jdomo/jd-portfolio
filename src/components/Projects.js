@@ -20,6 +20,10 @@ class Projects extends Component {
             </div>
             <div className="col-1-of-2">
               <h3 className="heading-tertiary u-margin-bottom-sml">How Many Words</h3>
+              <div className="project__links--mobile">
+                <a href="https://pages.git.generalassemb.ly/jdomo/how-many-words/" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="https://github.com/jdomo/how-many-words" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
               <p className="project__text">
                 How Many Words can you make out of 9 random letters? Set your high score, then step your game up and try to top it. You've got 120 seconds.
                 All you need is a web browser, a keyboard and your smarty pants.
