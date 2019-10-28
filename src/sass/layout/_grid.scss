@@ -14,16 +14,10 @@
       margin-right: $gutter-horizontal;
       
       @include respond($respond-nav-shrink) {
-        // margin-right: 0;
-        // margin-left: 0;
         display: table;
         margin: 0 auto;
+        float: none;
       }
-    }
-    @include respond($respond-nav-shrink) {
-      // margin-right: 0;
-      // margin-left: 0;
-      float: none;
     }
   }
 
