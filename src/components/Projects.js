@@ -45,6 +45,10 @@ class Projects extends Component {
           <div className="row">
             <div className="col-1-of-2">
               <h3 className="heading-tertiary u-margin-bottom-sml">Watch Your Tone</h3>
+              <div className="project__links--mobile">
+                <a href="https://watch-your-tone.herokuapp.com/" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Website</a>
+                <a href="http://www.github.com" className="project__link--mobile" target="_blank" rel="noopener noreferrer">Code</a>
+              </div>
               <p className="project__text">
               Ever wonder about how an AI interprets the things we say? Using IBM's Tone Analyzer, 
               Watch Your Tone enlists the processing power of Watson to determine the emotional content of your favourite phrases and quotes.
