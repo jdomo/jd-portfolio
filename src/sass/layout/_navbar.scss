@@ -57,7 +57,7 @@
 
     list-style: none;
     text-align: center;
-    width: 65%;
+    width: 70%;
     padding-top: 2rem;
     border-radius: $border-radius-sml;
 
@@ -78,6 +78,7 @@
 
   &__item {
     display: inline-block;
+    margin: auto;
     font-size: 1.5rem;
     font-weight: 500;
     padding: 0 3rem;
@@ -86,13 +87,6 @@
     @include respond($respond-nav-shrink) {
       padding: 1.9rem;
       font-size: 1.4rem;
-    }
-
-    
-    @include respond($respond-nav-collapse) {
-      display: block;
-      padding: 0 0 2rem 0;
-      margin-top: 2rem;
     }
   }
 
