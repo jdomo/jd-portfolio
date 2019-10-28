@@ -158,18 +158,16 @@
       width: 100%;
       display: block;
     }
-  }
 
-  &__links--mobile {
-    width: 100%;
-    text-align: center;
-    display: none;
-
-    @include respond($respond-nav-shrink) {
-      // width: 100%;
-      display: block;
-      margin: 3.5rem 0 5rem 0;
-      // height: 100%;
+    &--mobile {
+      width: 100%;
+      text-align: center;
+      display: none;
+  
+      @include respond($respond-nav-shrink) {
+        display: block;
+        margin: 3.5rem 0 5rem 0;
+      }
     }
   }
   
@@ -222,7 +220,7 @@
         padding: 1.5rem;
         color: $color-white;
         box-shadow: 0rem .5rem .5rem rgba($color-black, .8);
-        
+
         &:not(:first-child) {
           margin-left: 3rem;
         }
@@ -247,8 +245,9 @@
     font-size: 3rem;
 
     @include respond($respond-nav-collapse) {
-      // display: none;
       font-size: 1.5rem;
+      // line-height: 9rem;
+      // height: 9rem;
     }
   }
 }
