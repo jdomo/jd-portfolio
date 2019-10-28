@@ -119,17 +119,17 @@
       }
     }
 
-    &:target,
-    &:focus {
-      border-top: 4px solid $color-tertiary-light;
-      border-radius: $border-radius-sml;
-      background-color: rgba($color-blue-dark, 0.2);
+    // &:target,
+    // &:focus {
+    //   border-top: 4px solid $color-tertiary-light;
+    //   border-radius: $border-radius-sml;
+    //   background-color: rgba($color-blue-dark, 0.2);
       
-      @include respond($respond-nav-collapse) {
-        border: none;
-        background-color: rgba($color-blue-dark, 0.2);
-      }
-    }
+    //   @include respond($respond-nav-collapse) {
+    //     border: none;
+    //     background-color: rgba($color-blue-dark, 0.2);
+    //   }
+    // }
 
   }
 }
