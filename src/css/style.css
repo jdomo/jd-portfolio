@@ -164,8 +164,8 @@ header {
       margin-right: 5rem; }
       @media (max-width: 931px) {
         .row [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-left: 0; } }
+          display: table;
+          margin: 0 auto; } }
     @media (max-width: 931px) {
       .row [class^="col-"] {
         float: none; } }
