@@ -1,6 +1,4 @@
 .section-about {
-  //media queries at 1060px
-
   height: 70rem;
   margin-top: -27rem;
   background-image: linear-gradient(to bottom, $color-grey-light 98%, transparent);
@@ -40,6 +38,7 @@
     width: 100%;
     transform: translateY(-5rem);
     z-index: 100;
+    
   }
 
   &__text {
@@ -101,7 +100,6 @@
 }
 
 .section-projects {
-  //media queries at 1200px
 
   height: 140rem;
   background-image: linear-gradient(to bottom, transparent, $color-grey-light 2%);
@@ -111,6 +109,7 @@
 
   @include respond($respond-nav-collapse) {
     height: 2rem;
+    padding-bottom: 0;
   }
 }
 
@@ -220,7 +219,6 @@
       @include respond($respond-nav-shrink) {
         opacity: 1;
         display: inline-block;
-        // text-align: center;
         width: 10rem;
         text-decoration: none;
         letter-spacing: 1px;
@@ -236,7 +234,8 @@
       }
 
       @include respond($respond-phone) {
-        width: 8rem;
+        width: 10rem;
+        text-align: center;
         letter-spacing: .5px;
       }
     }
@@ -255,12 +254,8 @@
     }
   }
   
-  &__icons {
-    font-size: 3rem;
-
-    @include respond($respond-nav-collapse) {
-      font-size: 1.5rem;
-    }
+  &__icon {
+    font-size: 4.5rem;
   }
 }
 

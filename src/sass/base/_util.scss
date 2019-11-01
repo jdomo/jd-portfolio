@@ -33,3 +33,9 @@
     transform: none;
   }
 }
+
+.u-disappear {
+  @include respond($respond-nav-shrink) {
+    display: none !important;
+  }
+}

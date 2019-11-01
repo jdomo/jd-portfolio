@@ -9,7 +9,7 @@ class Projects extends Component {
         </div>
         <div className="project">
           <div className="row">
-            <div className="col-1-of-2">
+            <div className="col-1-of-2 u-disappear">
               <div className="project__img-container">
                 <img src="img/how-many-words.png" alt="How Many Words" className="project__img"></img>
                 <div className="project__links">
@@ -67,7 +67,7 @@ class Projects extends Component {
                 <i className="devicon-github-plain project__icon"></i>
               </p>
             </div>
-            <div className="col-1-of-2">
+            <div className="col-1-of-2 u-disappear">
               <div className="project__img-container">
                 <img src="img/watch-your-tone.png" alt="Watch Your Tone" className="project__img"/>
                 <div className="project__links">
@@ -81,7 +81,7 @@ class Projects extends Component {
         
         <div className="project">
           <div className="row">
-            <div className="col-1-of-2">
+            <div className="col-1-of-2 u-disappear">
               <div className="project__img-container">
                 <img src="img/best-dish.png" alt="Best Dish" className="project__img"></img>      
                 <div className="project__links">
