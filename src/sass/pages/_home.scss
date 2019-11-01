@@ -121,7 +121,11 @@
 
   @include respond($respond-nav-collapse) {
     padding-top: 3.5rem;
-    // padding-bottom: 5rem;
+  }
+
+  @include respond($respond-phone) {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &__img-container {
@@ -213,10 +217,10 @@
     &--mobile {
       display: none;
 
-      @include respond($respond-nav-collapse) {
+      @include respond($respond-nav-shrink) {
         opacity: 1;
         display: inline-block;
-        text-align: center;
+        // text-align: center;
         width: 10rem;
         text-decoration: none;
         letter-spacing: 1px;
@@ -229,6 +233,11 @@
         &:not(:first-child) {
           margin-left: 3rem;
         }
+      }
+
+      @include respond($respond-phone) {
+        width: 8rem;
+        letter-spacing: .5px;
       }
     }
   }
@@ -251,8 +260,6 @@
 
     @include respond($respond-nav-collapse) {
       font-size: 1.5rem;
-      // line-height: 9rem;
-      // height: 9rem;
     }
   }
 }

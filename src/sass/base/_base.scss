@@ -10,9 +10,14 @@
 //Default font-size of 10px (10px/16px)
 html {
   font-size: 62.5%;
-
+  
   @include respond($respond-nav-collapse) {
     font-size: 55%;
+    width: 100%;
+  }
+  
+  @include respond($respond-phone) {
+    font-size: 45%;
     width: 100%;
   }
 }

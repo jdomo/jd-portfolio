@@ -16,7 +16,7 @@
       @include respond($respond-nav-shrink) {
         display: table;
         margin: 0 auto;
-        float: none;
+        width: 80%;
       }
     }
   }

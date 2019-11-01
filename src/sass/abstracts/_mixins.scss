@@ -34,11 +34,14 @@
 */
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == $respond-nav-shrink {
-    @media (max-width: $respond-nav-shrink) {@content};
+  @if $breakpoint == $respond-phone {
+    @media only screen and (max-width: $respond-phone) {@content};
   }
-  @if $breakpoint == $respond-nav-collapse {
-    @media (max-width: $respond-nav-collapse) {@content};
+  @else if $breakpoint == $respond-nav-collapse {
+    @media only screen and (max-width: $respond-nav-collapse) {@content};
+  }
+  @else if $breakpoint == $respond-nav-shrink {
+    @media only screen and (max-width: $respond-nav-shrink) {@content};
   }
 }
 

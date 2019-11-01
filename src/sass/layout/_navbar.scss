@@ -88,6 +88,10 @@
       padding: 1.9rem;
       font-size: 1.4rem;
     }
+
+    @include respond($respond-nav-collapse) {
+      display: block;
+    }
   }
 
   &__link {
