@@ -80,6 +80,7 @@
   }
 
   &__container {
+    transform: skew(-$skew-amount);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,12 +90,14 @@
     margin-top: 3rem;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 40rem;
+    width: 70%;
   }
 
   &__icon-container {
     flex-basis: 8rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    transform: skew($skew-amount);    
+    text-align: center;
   }
 
   &__icon {
@@ -105,7 +108,7 @@
   &__label {
     color: white;
     font-size: 1.25rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
   }
 
   @include respond($respond-nav-shrink) {

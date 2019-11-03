@@ -21,6 +21,14 @@ const Skills = () => {
             <i className="devicon-javascript-plain section-skills__icon"></i>
           </div>
           <div className="section-skills__icon-container">
+            <p className="section-skills__label">React</p>
+            <i className="devicon-react-original section-skills__icon"></i>
+          </div>
+          <div className="section-skills__icon-container">
+            <p className="section-skills__label">Sass</p>
+            <i className="devicon-sass-original section-skills__icon"></i>
+          </div>
+          <div className="section-skills__icon-container">
             <p className="section-skills__label">Express</p>
             <i className="devicon-express-original section-skills__icon"></i>
           </div>
