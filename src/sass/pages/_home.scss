@@ -80,7 +80,7 @@
   }
 
   &__container {
-    transform: skew(-$skew-amount);
+    // transform: skew(-$skew-amount);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,7 +96,7 @@
   &__icon-container {
     flex-basis: 8rem;
     margin-top: 3rem;
-    transform: skew($skew-amount);    
+    // transform: skew($skew-amount);    
     text-align: center;
   }
 
@@ -116,6 +116,7 @@
     transform: none;
     border-radius: .3rem;
     width: 95%;
+    height: max-content;
     padding: 7rem 0 10rem 0;
     margin-top: 5rem;
 

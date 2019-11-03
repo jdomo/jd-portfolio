@@ -78,6 +78,7 @@ header {
     display: inline-block;
     color: $color-white;
     transition: all .3s;
+    // transform: skew(-$skew-amount);
   
     &:hover {
       transform: scale(1.04);

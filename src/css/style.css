@@ -383,7 +383,6 @@ header {
     transform: scale(1.02) translateY(-0.5rem) skew(-12deg);
     box-shadow: -1rem 0 3.8rem #777; }
   .section-skills__container {
-    transform: skew(-12deg);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -397,7 +396,6 @@ header {
   .section-skills__icon-container {
     flex-basis: 8rem;
     margin-top: 3rem;
-    transform: skew(12deg);
     text-align: center; }
   .section-skills__icon {
     font-size: 4rem;
@@ -412,6 +410,7 @@ header {
       transform: none;
       border-radius: .3rem;
       width: 95%;
+      height: max-content;
       padding: 7rem 0 10rem 0;
       margin-top: 5rem; }
       .section-skills:hover {
