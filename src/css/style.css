@@ -85,7 +85,6 @@ header {
     font-weight: 700;
     letter-spacing: .65rem;
     margin: auto;
-    margin-right: 6rem;
     padding-bottom: 1.25rem;
     border-bottom: 1px solid rgba(233, 233, 233, 0.2);
     cursor: default;
@@ -376,13 +375,34 @@ header {
   border-radius: 1rem;
   box-shadow: -1rem 0 2.8rem #777;
   transform: skew(-15deg);
-  width: 75%;
+  width: 60%;
   padding: 7rem 0 30rem 0;
   background-image: linear-gradient(to bottom, #4a919e, #212e53);
   transition: all .3s; }
   .section-skills:hover {
     transform: scale(1.02) translateY(-0.5rem) skew(-15deg);
     box-shadow: -1rem 0 3.8rem #777; }
+  .section-skills__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 40rem; }
+  .section-skills__icon-container {
+    flex-basis: 8rem;
+    margin-top: 2rem; }
+  .section-skills__icon {
+    font-size: 4rem;
+    color: white; }
+  .section-skills__label {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1rem; }
   @media only screen and (max-width: 960px) {
     .section-skills {
       box-shadow: none;

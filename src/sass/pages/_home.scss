@@ -66,7 +66,7 @@
   border-radius: 1rem;
   box-shadow: -1rem 0 2.8rem $color-grey-dark;
   transform: skew(-$skew-amount);
-  width: 75%;
+  width: 60%;
   padding: 7rem 0 30rem 0;
   background-image: linear-gradient(
     to bottom, 
@@ -77,6 +77,35 @@
   &:hover {
     transform: scale(1.02) translateY(-.5rem) skew(-$skew-amount);
     box-shadow: -1rem 0 3.8rem $color-grey-dark;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; //vertical
+    justify-content: center;  //align according to specified flex-direction
+    margin: auto;
+    margin-top: 3rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 40rem;
+  }
+
+  &__icon-container {
+    flex-basis: 8rem;
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: white;
+  }
+
+  &__label {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   @include respond($respond-nav-shrink) {
@@ -100,7 +129,6 @@
 }
 
 .section-projects {
-
   height: 140rem;
   background-image: linear-gradient(to bottom, transparent, $color-grey-light 2%);
   padding: 8rem 0 25rem 0;
