@@ -90,25 +90,24 @@
     margin-top: 3rem;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 70%;
+    width: 50%;
   }
 
   &__icon-container {
     flex-basis: 8rem;
-    margin-top: 3rem;
-    // transform: skew($skew-amount);    
+    // margin-top: 1rem;
     text-align: center;
   }
 
   &__icon {
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
   }
 
   &__label {
     color: white;
     font-size: 1.25rem;
-    margin: 1.5rem 0;
+    margin: 3rem 0 1.5rem 0;
   }
 
   @include respond($respond-nav-shrink) {
@@ -135,6 +134,7 @@
 .section-projects {
   height: 140rem;
   background-image: linear-gradient(to bottom, transparent, $color-grey-light 2%);
+  margin-bottom: 12rem;
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative;
