@@ -2,14 +2,16 @@
 
 // }
 
-// #content-wrap {
-//   padding-bottom: $footer-height;
-// }
+#content-wrap {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: $footer-height;
+}
 
 // #root {
 //   min-height: 100vh;
-//   position: relative;
-//   padding-bottom: $footer-height;
 // }
 
 .section-about {
