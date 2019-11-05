@@ -1,3 +1,17 @@
+// #master-container {
+
+// }
+
+// #content-wrap {
+//   padding-bottom: $footer-height;
+// }
+
+// #root {
+//   min-height: 100vh;
+//   position: relative;
+//   padding-bottom: $footer-height;
+// }
+
 .section-about {
   height: 70rem;
   margin-top: -27rem;
@@ -90,7 +104,7 @@
     margin-top: 3rem;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 50%;
+    width: 65%;
   }
 
   &__icon-container {

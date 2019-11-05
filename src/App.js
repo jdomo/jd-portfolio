@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.scss';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -9,12 +9,14 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Header/>
-      <About/>
-      <Skills/>
-      <Projects/>
+    <div id="master-container">
+      <div id="content-wrap">
+        <Navbar/>
+        <Header/>
+        <About/>
+        <Skills/>
+        <Projects/>
+      </div>
       <Footer/>
     </div>
   );
