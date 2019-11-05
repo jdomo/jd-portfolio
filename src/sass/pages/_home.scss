@@ -7,12 +7,14 @@
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: $footer-height;
-}
 
-// #root {
-//   min-height: 100vh;
-// }
+  @include respond($respond-nav-shrink) {
+    padding-bottom: calc(#{$navbar-height} + 19rem);
+  }
+  @include respond($respond-nav-collapse) {
+    padding-bottom: calc(#{$navbar-height} + 12rem);
+  }
+}
 
 .section-about {
   height: 70rem;
@@ -96,7 +98,6 @@
   }
 
   &__container {
-    // transform: skew(-$skew-amount);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,7 +112,6 @@
 
   &__icon-container {
     flex-basis: 8rem;
-    // margin-top: 1rem;
     text-align: center;
   }
 
@@ -155,9 +155,12 @@
   font-size: 1.6rem;
   position: relative;
 
+  @include respond($respond-nav-shrink) {
+    padding-bottom: 140rem;
+  }
+
   @include respond($respond-nav-collapse) {
     height: 2rem;
-    padding-bottom: 0;
   }
 }
 

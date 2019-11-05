@@ -1,7 +1,6 @@
 .footer {
   height: $footer-height;
   background: $color-blue-light;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position: relative;
+  top: 100%;
 }
