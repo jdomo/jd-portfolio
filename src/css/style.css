@@ -23,7 +23,7 @@ html {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     html {
       font-size: 55%;
       width: 100%; } }
@@ -51,7 +51,7 @@ header {
     font-size: 5.0rem;
     font-weight: 700;
     letter-spacing: .8rem; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .heading-primary--main {
         letter-spacing: .7rem;
         font-size: 4.25rem;
@@ -61,7 +61,7 @@ header {
     font-size: 3.5rem;
     font-weight: 400;
     letter-spacing: .6rem; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .heading-primary--sub {
         font-size: 3rem; } }
 
@@ -82,7 +82,7 @@ header {
     text-shadow: 3rem 3rem 0.5rem rgba(119, 119, 119, 0.2);
     border-bottom: 1px solid transparent;
     backface-visibility: hidden; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .heading-secondary:hover:hover {
         transform: none;
         text-shadow: none; } }
@@ -101,7 +101,7 @@ header {
       transform: scale(1.04);
       border-bottom: 1px solid transparent;
       backface-visibility: hidden; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .heading-secondary--2 {
         margin-right: 0; } }
 
@@ -115,7 +115,7 @@ header {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.2rem; }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .heading-tertiary--sub {
         margin-bottom: 1.5rem; } }
 
@@ -131,7 +131,7 @@ header {
 
 .project__icon {
   font-size: 4rem; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     .project__icon {
       font-size: 3.5rem; } }
   .project__icon:not(:first-child) {
@@ -160,11 +160,11 @@ header {
 
 .u-unskew {
   transform: skew(8deg); }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1120px) {
     .u-unskew {
       transform: none; } }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1120px) {
   .u-disappear {
     display: none !important; } }
 
@@ -180,7 +180,7 @@ header {
       padding: 3.5rem 0;
       font-size: 2.25rem;
       letter-spacing: .35rem; }
-      @media only screen and (max-width: 640px) {
+      @media only screen and (max-width: 730px) {
         .footer__heading--sub {
           padding: 2.5rem; } }
   .footer__content {
@@ -215,21 +215,21 @@ header {
     content: '';
     clear: both;
     display: table; }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .row::after {
         display: none; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5rem; }
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1120px) {
         .row [class^="col-"]:not(:last-child) {
           display: table;
           margin: 0 auto;
           width: 80%; } }
   .row .col-1-of-2 {
     width: calc((100% - 5rem) / 2); }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .row .col-1-of-2 {
         width: 80%;
         float: none;
@@ -270,9 +270,18 @@ header {
     left: 50%;
     /* center in relation to element itself */
     transform: translate(-50%, -40%); }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .header__text-box {
         width: 75%; } }
+  .header__resume-link {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-size: 2rem; }
+    .header__resume-link i {
+      font-size: 2rem; }
+    .header__resume-link:link, .header__resume-link:visited {
+      color: #FFF; }
 
 .navbar {
   background-color: #4a919e;
@@ -286,10 +295,10 @@ header {
   width: 100%;
   z-index: 2;
   transition: all .6s ease; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     .navbar {
       border: none;
-      height: 30rem;
+      height: 35rem;
       overflow: hidden;
       position: fixed; }
       .navbar--hide {
@@ -310,7 +319,7 @@ header {
     cursor: pointer; }
     .navbar__button--clicked {
       transform: scale(1.3) rotate(180deg); }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .navbar__button {
         visibility: visible;
         margin-top: 1.5rem; } }
@@ -324,10 +333,10 @@ header {
     width: 70%;
     padding-top: 2rem;
     border-radius: 3px; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .navbar__linklist {
         width: 95%; } }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .navbar__linklist {
         position: relative;
         left: 0%;
@@ -343,11 +352,11 @@ header {
     font-weight: 500;
     padding: 0 3rem;
     border-radius: 3px; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .navbar__item {
         padding: 1.9rem;
         font-size: 1.4rem; } }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .navbar__item {
         display: block; } }
   .navbar__link, .navbar__link:link, .navbar__link:visited {
@@ -360,7 +369,7 @@ header {
   .navbar__link:hover, .navbar__link:active {
     border-top: 4px solid #bed3c3;
     border-radius: 3px; }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 730px) {
       .navbar__link:hover, .navbar__link:active {
         border: none;
         background-color: rgba(33, 46, 83, 0.2); } }
@@ -370,10 +379,10 @@ header {
   overflow: hidden;
   display: block;
   position: relative; }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1120px) {
     #content-wrap {
       padding-bottom: calc(6rem + 19rem); } }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     #content-wrap {
       padding-bottom: calc(6rem + 12rem); } }
 
@@ -387,7 +396,7 @@ header {
     position: relative;
     width: 60%;
     margin: auto; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .section-about__content {
         width: 75%;
         padding: 2rem 0 5rem 0; } }
@@ -400,7 +409,7 @@ header {
     -webkit-clip-path: circle(50% at 50% 45%);
     clip-path: circle(50% at 50% 45%);
     transform: translateX(-3rem); }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .section-about__shape {
         float: none;
         display: block;
@@ -414,14 +423,14 @@ header {
     padding-top: 2rem;
     transform: translateX(2rem);
     line-height: 3rem; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .section-about__text {
         text-align: center;
         display: inline-block;
         margin-bottom: 3rem;
         transform: none;
         padding-top: 4rem; } }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1120px) {
     .section-about {
       height: max-content; } }
 
@@ -459,7 +468,7 @@ header {
     color: white;
     font-size: 1.25rem;
     margin: 3rem 0 1.5rem 0; }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1120px) {
     .section-skills {
       box-shadow: none;
       transform: none;
@@ -471,7 +480,7 @@ header {
       .section-skills:hover {
         transform: none;
         box-shadow: none; } }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     .section-skills {
       margin-top: 0; } }
 
@@ -482,10 +491,10 @@ header {
   padding: 8rem 0 25rem 0;
   font-size: 1.6rem;
   position: relative; }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 1120px) {
     .section-projects {
       padding-bottom: 140rem; } }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     .section-projects {
       height: 2rem; } }
 
@@ -493,7 +502,7 @@ header {
   margin: auto;
   width: 95%;
   padding: 5rem 5rem 7.5rem 5rem; }
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 730px) {
     .project {
       padding-top: 3.5rem; } }
   @media only screen and (max-width: 599px) {
@@ -513,7 +522,7 @@ header {
       filter: brightness(75%) blur(0.5px); }
     .project__img-container:hover .project__link {
       opacity: 1; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .project__img-container {
         width: 100%; }
         .project__img-container:hover {
@@ -526,7 +535,7 @@ header {
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .project__links {
         width: 100%;
         display: block; } }
@@ -534,7 +543,7 @@ header {
       width: 100%;
       text-align: center;
       display: none; }
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1120px) {
         .project__links--mobile {
           display: block;
           margin: 3.5rem 0 5rem 0; } }
@@ -559,12 +568,12 @@ header {
     .project__link:active {
       transform: translateY(0);
       box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8); }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .project__link {
         display: none; } }
     .project__link--mobile {
       display: none; }
-      @media only screen and (max-width: 960px) {
+      @media only screen and (max-width: 1120px) {
         .project__link--mobile {
           opacity: 1;
           display: inline-block;
@@ -590,7 +599,7 @@ header {
     border-radius: 3px;
     box-shadow: 0rem 1rem 1.8rem #999;
     transition: all .3s; }
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: 1120px) {
       .project__img {
         display: none; } }
   .project__icon {

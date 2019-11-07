@@ -3,7 +3,6 @@
 .header {
   position: relative;
   margin-top: $navbar-height;
-  // height: 80vh;
   height: 50rem;
   background-image: linear-gradient(
     to bottom, 
@@ -13,11 +12,6 @@
   background-position: top;
   -webkit-clip-path: ellipse(80% 80% at 50% -10%);
   clip-path: ellipse(90% 80% at 50% -12%);
-
-  // @include respond($respond-nav-collapse) {
-  //   margin-top: 0;
-  // }
-
   
   &__logo-box {
     position: absolute;
@@ -43,6 +37,23 @@
 
     @include respond($respond-nav-collapse) {
       width: 75%;
+    }
+  }
+
+  &__resume-link {
+
+    & i {
+      font-size: 2rem;
+    }
+
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+
+    &:link,
+    &:visited {
+      color: $color-white;
     }
   }
 }

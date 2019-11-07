@@ -34,9 +34,9 @@ class Navbar extends Component {
           <li className={this.state.active ? 'navbar__item' : 'navbar__item navbar__item--hide'}>
             <a href="#contact" className="navbar__link" onClick={this.toggleClass}>Contact</a>
           </li>
-          {/* <li className={this.state.active ? 'navbar__item' : 'navbar__item navbar__item--hide'}>
+          <li className={this.state.active ? 'navbar__item' : 'navbar__item navbar__item--hide'}>
             <a href="https://jdomo.github.io/jd-portfolio/docs/jdomovitchresume.pdf" className="navbar__link" target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i> Resume</a>
-          </li> */}
+          </li>
         </ul>
       </nav>
     )

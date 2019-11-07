@@ -12,7 +12,7 @@ const Header = () => {
                 Web Developer
             </span>
         </h1>
-        
+        {/* <a href="https://jdomo.github.io/jd-portfolio/docs/jdomovitchresume.pdf" className="header__resume-link" target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i>Resume</a>         */}
       </div>
     </header>
   )
