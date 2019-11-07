@@ -12,9 +12,7 @@ const Header = () => {
                   Web Developer
               </span>
           </h1>
-          {/* <div className="header__logo-box">
-              <img src="img/logo-white.png" alt="logo" className="header__logo"/>
-          </div> */}
+          
       </div>
     </header>
   )
