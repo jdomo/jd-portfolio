@@ -15,7 +15,7 @@ const About = () => {
             <div className="section-about__text">
               <p>
                 I am a software engineer with a colourful background in music production and psychology. 
-                I’m passionate about programming, music, food, and travel. Striving to deliver creative yet 
+                I’m passionate about programming, design, music, food, and travel. Striving to deliver creative yet 
                 straightforward solutions, I am seeking a position where I can apply my skills while tackling 
                 any challenge presented.
               </p>
