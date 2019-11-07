@@ -169,10 +169,41 @@ header {
     display: none !important; } }
 
 .footer {
-  height: 15rem;
+  height: 25rem;
   background: #4a919e;
   position: relative;
-  top: 100%; }
+  top: 100%;
+  text-align: center; }
+  .footer__heading {
+    color: #FFF; }
+    .footer__heading--sub {
+      padding: 4rem 0;
+      font-size: 2.5rem; }
+      @media only screen and (max-width: 640px) {
+        .footer__heading--sub {
+          padding: 2.5rem; } }
+  .footer__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .footer__links {
+    margin: auto;
+    position: relative; }
+  .footer__link {
+    transition: all .3s;
+    text-decoration: none; }
+    .footer__link #linked-in {
+      font-size: 5rem; }
+    .footer__link #github {
+      font-size: 4.5rem; }
+    .footer__link:link, .footer__link:visited {
+      color: #FFF; }
+    .footer__link:hover {
+      color: #e9e9e9;
+      text-decoration: none; }
+    .footer__link:not(:first-child) {
+      margin-left: 3.5rem; }
 
 .row {
   max-width: 114rem;

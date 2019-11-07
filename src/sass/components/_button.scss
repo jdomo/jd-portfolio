@@ -1,106 +1,106 @@
-.btn {
+// .btn {
   
-  &--animated {
-    animation: moveInBottom 2s ease-out;
-    animation-delay: 0.5s;
+//   &--animated {
+//     animation: moveInBottom 2s ease-out;
+//     animation-delay: 0.5s;
   
-    /* applies 0% animation styles before animation starts. */
-    animation-fill-mode: backwards;
-  }
+//     /* applies 0% animation styles before animation starts. */
+//     animation-fill-mode: backwards;
+//   }
   
-  &,      //include plain .btn class
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    font-size: $default-font-size;
+//   &,      //include plain .btn class
+//   &:link,
+//   &:visited {
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     padding: 1.5rem 4rem;
+//     font-size: $default-font-size;
   
-    transition: all .5s;
+//     transition: all .5s;
   
-    /* center as text */
-    display: inline-block;
+//     /* center as text */
+//     display: inline-block;
   
-    /* so pseudo-element can hide behind using absolute positioning (first parent) */
-    position: relative;
+//     /* so pseudo-element can hide behind using absolute positioning (first parent) */
+//     position: relative;
 
-    //Change for <button> element on form - necessary for proper form function
-    cursor: pointer;
-    border: 0;
-    font-family: inherit;
-  }
+//     //Change for <button> element on form - necessary for proper form function
+//     cursor: pointer;
+//     border: 0;
+//     font-family: inherit;
+//   }
   
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+//   &:hover {
+//     transform: translateY(-3px);
+//     box-shadow: 0 1rem 2rem rgba($color-black,0.2);
   
-    &::after {
-      /* pseudo-element grows and disappears from behind .btn */
-      transform: scale(1.2, 1.6);
-      opacity: 0
-    }
-  }
+//     &::after {
+//       /* pseudo-element grows and disappears from behind .btn */
+//       transform: scale(1.2, 1.6);
+//       opacity: 0
+//     }
+//   }
   
-  &:active {
-    /* appears closer to page when clicked/active - 
-                                        shadow gets tighter and sinks from hover position */
-    transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
-  }
+//   &:active {
+//     /* appears closer to page when clicked/active - 
+//                                         shadow gets tighter and sinks from hover position */
+//     transform: translateY(-1px);
+//     box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+//   }
   
-  &--white {
-    background-color: $color-white;
-    color: $color-grey-dark;
-    border-radius: 20rem;
-  }
+//   &--white {
+//     background-color: $color-white;
+//     color: $color-grey-dark;
+//     border-radius: 20rem;
+//   }
 
-  &--green {
-    background-color: $color-primary;
-    color: $color-white;
-    border-radius: 20rem;
-  }
+//   &--green {
+//     background-color: $color-primary;
+//     color: $color-white;
+//     border-radius: 20rem;
+//   }
   
-  &::after {
-    content: "";            /* necessary line that doesn't seem to do anything else */
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-color: inherit;
+//   &::after {
+//     content: "";            /* necessary line that doesn't seem to do anything else */
+//     display: inline-block;
+//     height: 100%;
+//     width: 100%;
+//     background-color: inherit;
   
-    /* hide behind parent element & */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 20rem;
+//     /* hide behind parent element & */
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     border-radius: 20rem;
   
-    /* pseudo-element disappears as hover changes take effect*/
-    transition: all .4s;
-  }
+//     /* pseudo-element disappears as hover changes take effect*/
+//     transition: all .4s;
+//   }
 
-  &--text {
-    &:link,
-    &:visited {
-      font-size: $default-font-size;
-      color: $color-primary-dark;
-      display: inline-block;
-      text-decoration: none;
-      border: 1px solid $color-primary-dark;
-      border-bottom: 1px solid $color-primary;    //very small measurements in px are OK
-      padding: 5px;
-      border-radius: $border-radius-sml;
-      transition: all 0.4s;
-    }
+//   &--text {
+//     &:link,
+//     &:visited {
+//       font-size: $default-font-size;
+//       color: $color-primary-dark;
+//       display: inline-block;
+//       text-decoration: none;
+//       border: 1px solid $color-primary-dark;
+//       border-bottom: 1px solid $color-primary;    //very small measurements in px are OK
+//       padding: 5px;
+//       border-radius: $border-radius-sml;
+//       transition: all 0.4s;
+//     }
 
-    &:hover {
-      background-color: $color-primary;
-      color: $color-white;
-      box-shadow: 0 1rem 2rem rgba($color-black, .15);
-      transform: translateY(2px);
-    }
+//     &:hover {
+//       background-color: $color-primary;
+//       color: $color-white;
+//       box-shadow: 0 1rem 2rem rgba($color-black, .15);
+//       transform: translateY(2px);
+//     }
 
-    &:active {
-      transform: translateY(0);
-    }
-  }
-}
+//     &:active {
+//       transform: translateY(0);
+//     }
+//   }
+// }
